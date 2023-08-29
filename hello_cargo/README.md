@@ -8,9 +8,8 @@ cargo new hello_cargo
 # Build
 cargo build
 
-# Run
-target/debug/hello_cargo.exe
-
+# Build and Run
+cargo run 
 
 ```
 
