@@ -1,7 +1,6 @@
 # hello_cargo
 
 ```
-
 # Create
 cargo new hello_cargo
 
@@ -10,7 +9,6 @@ cargo build
 
 # Build and Run
 cargo run 
-
 ```
 
 
