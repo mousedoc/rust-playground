@@ -1,4 +1,7 @@
+extern crate rand;
+
 use std::io;
+use rand::Rng;
 
 fn let_example() {
     let a = 10;         // immutable
@@ -9,25 +12,6 @@ fn let_example() {
     b *= 10;
 
     println!("Now, a is {} and b is {}", a, b);
-}
-
-
-
-fn main() {
-
-    let_example();
-    read_line_example();
-
-    println!("Guess Number Game");
-    println!("Input your guess");
-
-    // Input 
-    let mut guess = String::new();
-    io::stdin().read_line(&mut guess).
-        expect("Failed to read line");
-    
-    println!("Your guess: {}", guess);
-
 }
 
 fn read_line_example() {
@@ -43,3 +27,24 @@ fn read_line_example() {
     // # - # : can conatin "
     println!(r#"Input is "{}""#, input);
 }
+
+fn main() {
+
+    let_example();
+    read_line_example();
+
+    // 0~9
+    let answer = rand::thread_rng().gen_range(0, 10);
+
+    println!("Guess Number Game");
+    println!("Input your guess");
+
+    // Input 
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).
+        expect("Failed to read line");
+    
+    println!("Your input: {}", input);
+
+}
+
