@@ -1,6 +1,7 @@
 extern crate rand;
 
 use std::io;
+use std::cmp::Ordering;
 use rand::Rng;
 
 fn variable_example() {
@@ -49,11 +50,24 @@ fn random_example() {
     println!("Random 0f~10f (exclude 10f): {}", rng.gen_range(0.0..10.0));        
 }
 
+fn compare_example() {
+
+    let left = 10;
+    let right = 5;
+
+    match left.cmp(&right) {
+        Ordering::Equal => println!("Equal"),
+        Ordering::Greater => println!("Greater"),
+        Ordering::Less => println!("Less"),
+    }
+}
+
 fn main() {
     
     // variable_example();
     // random_example();
     // read_line_example();
+    compare_example();
 
     // 0~9
     let answer = rand::thread_rng().gen_range(0..10);
