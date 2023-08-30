@@ -7,10 +7,18 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug",
+            "name": "rustc",
             "program": "rustc",
             "args": "${file}",
             // "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "cargo run",
+            "program": "cargo",
+            "args": "run",
+            "cwd": "${fileDirname}"
         },
     ]
 }
