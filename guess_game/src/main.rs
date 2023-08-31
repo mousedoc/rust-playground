@@ -63,7 +63,6 @@ fn compare_example() {
 }
 
 fn main() {
-    
     // variable_example();
     // random_example();
     // read_line_example();
@@ -76,19 +75,17 @@ fn main() {
     println!("Input your guess (0 ~ 9)");
 
     loop {
-        // Input 
         let mut input: String = String::new();
         io::stdin().read_line(&mut input).
                     expect("Failed to read line");
 
-        let integer_input: i32 = input.trim().parse() {
+        let integer_input: i32 = match input.trim().parse() {
             Ok(num) => num,
             Err(_) => {
                 println!("Wrong input");
                 continue;
-            }
+            },
         };
-                                  
 
         match integer_input.cmp(&answer) {
             Ordering::Greater => println!("More down"),
