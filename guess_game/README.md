@@ -3,6 +3,7 @@
 ```
 # Create
 cargo new guess_game --bin
+cargo add rand // check toml
 
 # Build
 cargo build
