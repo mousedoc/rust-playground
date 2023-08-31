@@ -67,20 +67,37 @@ fn main() {
     // variable_example();
     // random_example();
     // read_line_example();
-    compare_example();
+    // compare_example();
 
     // 0~9
     let answer = rand::thread_rng().gen_range(0..10);
 
     println!("Guess Number Game");
-    println!("Input your guess");
+    println!("Input your guess (0 ~ 9)");
 
-    // Input 
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).
-        expect("Failed to read line");
-    
-    println!("Your input: {}", input);
+    loop {
+        // Input 
+        let mut input: String = String::new();
+        io::stdin().read_line(&mut input).
+                    expect("Failed to read line");
 
+        let integer_input: i32 = input.trim().parse() {
+            Ok(num) => num,
+            Err(_) => {
+                println!("Wrong input");
+                continue;
+            }
+        };
+                                  
+
+        match integer_input.cmp(&answer) {
+            Ordering::Greater => println!("More down"),
+            Ordering::Less => println!("More up"),
+            Ordering::Equal => {
+                println!("Correct!");
+                break;      // break loop
+            }
+        }
+    }   
 }
 
