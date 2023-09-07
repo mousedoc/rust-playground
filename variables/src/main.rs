@@ -26,13 +26,14 @@ fn variable_shadowing() {
     let num = num * 20;
     println!("num is {}", num);
 
-    let length: String = "          ";
-    let length = length.len();
+    let length: String = "          ".to_string();
+    let length: usize = length.len();
+
+    println!("length is {}", length);
 }
 
 fn basic_constant() {
-    const const_value: i32 = 123;
+    const CONST_VALUE: i32 = 123;
 
-    println!("const_value is {}", const_value);
-
+    println!("const_value is {}", CONST_VALUE);
 }
