@@ -1,7 +1,7 @@
 fn main() {
     variable();
     variable_shadowing();
-    basic_constant();
+    constant();
 }
 
 fn variable() {
@@ -32,7 +32,7 @@ fn variable_shadowing() {
     println!("length is {}", length);
 }
 
-fn basic_constant() {
+fn constant() {
     const CONST_VALUE: i32 = 123;
 
     println!("const_value is {}", CONST_VALUE);
