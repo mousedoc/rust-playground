@@ -4,6 +4,7 @@ fn main() {
     floating_types();
     boolean_type();
     character_types();
+    tuple_example();
 }
 
 fn signed_integer_tyeps() {
@@ -54,12 +55,22 @@ fn boolean_type() {
 
 fn character_types() {
     let character: char = 'z';
-    let characters: String = "zxcv";
+    let characters = "zxcv";
 
     println!("{}", character);
     println!("{}", characters);
 }
 
 fn tuple_example() {
-    
+    let tuple = (500, "asdf", 1);
+    let (x, y, z) = tuple;
+    println!("{}, {}, {}", x, y, z);
+
+    let tuple: (i32, f32, bool) = (512, 256.28, false);
+    let first = tuple.0;
+    let second = tuple.1;
+    let third = tuple.2;
+    println!("{}", first);
+    println!("{}", second);
+    println!("{}", third);
 }
