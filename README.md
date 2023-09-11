@@ -8,3 +8,5 @@ Nuclear test zone
 - [variables](https://github.com/mousedoc/rust-playground/tree/main/variables)  
 - [data_types](https://github.com/mousedoc/rust-playground/tree/main/data_types)  
 - [fucntions](https://github.com/mousedoc/rust-playground/tree/main/fucntions)  
+- [annotation](https://github.com/mousedoc/rust-playground/tree/main/annotation)  
+
