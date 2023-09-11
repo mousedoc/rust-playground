@@ -7,3 +7,4 @@ Nuclear test zone
 - [guess_game](https://github.com/mousedoc/rust-playground/tree/main/guess_game)  
 - [variables](https://github.com/mousedoc/rust-playground/tree/main/variables)  
 - [data_types](https://github.com/mousedoc/rust-playground/tree/main/data_types)  
+- [fucntions](https://github.com/mousedoc/rust-playground/tree/main/fucntions)  
