@@ -64,6 +64,11 @@ fn give_onwership_example() {
     let mut foo = String::from("foo");
     foo = print_str_and_return(foo);
     println!("oh {}", foo);
+
+    // with tuple
+    let world: String = String::from("world");
+    let world: (usize, String) = return_str_with_length_tuple(world);
+    println!("{}", world.1);
 }
 
 fn print_str(str: String) {
@@ -77,4 +82,11 @@ fn print_num(num: i32) {
 fn print_str_and_return(str: String) -> String {
     println!("{}", str);
     str
+}
+
+fn return_str_with_length_tuple(str: String) -> (usize, String) {
+    // Not available str by first element
+    // because ownership is returned and then len() is called.
+    // (str, str.len())
+    (str.len(), str)
 }
