@@ -1,6 +1,10 @@
 # rust-playground
 Nuclear test zone
 
+[](./readme_assets/does_not_compile.svg)
+[](./readme_assets/not_desired_behavior.svg.svg)
+[](./readme_assets/not_desired_behavior.svg.svg)
+
 ## Examples
 - [hello_world](https://github.com/mousedoc/rust-playground/blob/main/hello_world/main.rs)  
 - [hello_cargo](https://github.com/mousedoc/rust-playground/tree/main/hello_cargo/src/main.rs)  
