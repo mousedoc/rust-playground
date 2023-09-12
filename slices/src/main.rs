@@ -69,8 +69,9 @@ fn get_first_world_with_str(str: &str) -> &str {
     &str[..]
 }
 
-// &str = String slices
-// &[i32] = i32 array slices
+// Basically, slices are similar to references.
+// &str = string slices reference
+// &[i32] = i32 array slices reference
 fn integer_slices() {
     let mut int_elems: [i32; 5] = [1, 2, 3, 4, 5,];
     let int_slices: &mut [i32] = &mut int_elems[2..];
