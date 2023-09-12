@@ -22,10 +22,18 @@ fn move_example() {
     // Move ownership of first to second (not shallow/deep copy)
     // Now, first is invalid
     let second: String = first;
+    println!("{}", second);
 
     // So not available using fisrt variable
     // println!("{}", first);
-    println!("{}", second);
+
+    // Move again to 'third'
+    let mut third = second;
+    third.push_str(" now third");
+    println!("{}", third);
+
+    // now cannot use 'second'
+    // println!("{}", second);
 }
 
 fn clone_example() {

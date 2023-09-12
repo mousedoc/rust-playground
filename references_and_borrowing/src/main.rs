@@ -2,6 +2,7 @@ fn main() {
     reference_example();
     mutable_reference_example();
     reference_scope_example();
+    dangling_ref_example();
 }
 
 fn reference_example() {
@@ -59,6 +60,23 @@ fn reference_scope_example() {
     let r2: &mut String = &mut str;
     r2.push_str(" string string");
     println!("{}", r2);
+}
+
+fn dangling_ref_example() {
+    let mut str: String = not_dangle();
+    str.push_str(" good");
+    println!("{}", str);
+}
+
+// cannot
+// fn dangle() -> &String {
+//     let str = String::from("dangle");
+//     &str
+// }
+// should be below
+fn not_dangle() -> String {
+    let str: String = String::from("not dangle");
+    str
 }
 
 fn get_length(str: &String) -> usize {
