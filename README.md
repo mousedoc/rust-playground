@@ -10,6 +10,8 @@ Nuclear test zone
 - [fucntions](https://github.com/mousedoc/rust-playground/tree/main/fucntions/src/main.rs)  
 - [annotation](https://github.com/mousedoc/rust-playground/blob/main/annotation/src/main.rs)  
 - [if_statement](https://github.com/mousedoc/rust-playground/tree/main/if_statement/src/main.rs)  
-- [loop_statement](https://github.com/mousedoc/rust-playground/tree/main/loop_statement/src/main.rs)  
+- [loop_statement](https://github.com/mousedoc/rust-playground/tree/main/loop_statement/src/main.rs) 
+- [ownership](https://github.com/mousedoc/rust-playground/tree/main/ownership/src/main.rs)  
+
 
 
