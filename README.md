@@ -2,14 +2,14 @@
 Nuclear test zone
 
 ## Examples
-- [hello_world](https://github.com/mousedoc/rust-playground/tree/main/hello_world)  
-- [hello_cargo](https://github.com/mousedoc/rust-playground/tree/main/hello_cargo)  
-- [guess_game](https://github.com/mousedoc/rust-playground/tree/main/guess_game)  
-- [variables](https://github.com/mousedoc/rust-playground/tree/main/variables)  
-- [data_types](https://github.com/mousedoc/rust-playground/tree/main/data_types)  
-- [fucntions](https://github.com/mousedoc/rust-playground/tree/main/fucntions)  
-- [annotation](https://github.com/mousedoc/rust-playground/tree/main/annotation)  
-- [if_statement](https://github.com/mousedoc/rust-playground/tree/main/if_statement)  
-- [loop_statement](https://github.com/mousedoc/rust-playground/tree/main/loop_statement)  
+- [hello_world](https://github.com/mousedoc/rust-playground/blob/main/hello_world/main.rs)  
+- [hello_cargo](https://github.com/mousedoc/rust-playground/tree/main/hello_cargo/src/main.rs)  
+- [guess_game](https://github.com/mousedoc/rust-playground/tree/main/guess_game/src/main.rs)  
+- [variables](https://github.com/mousedoc/rust-playground/tree/main/variables/src/main.rs)  
+- [data_types](https://github.com/mousedoc/rust-playground/tree/main/data_type/src/main.rs)  
+- [fucntions](https://github.com/mousedoc/rust-playground/tree/main/fucntions/src/main.rs)  
+- [annotation](https://github.com/mousedoc/rust-playground/blob/main/annotation/src/main.rs)  
+- [if_statement](https://github.com/mousedoc/rust-playground/tree/main/if_statement/src/main.rs)  
+- [loop_statement](https://github.com/mousedoc/rust-playground/tree/main/loop_statement/src/main.rs)  
 
 
