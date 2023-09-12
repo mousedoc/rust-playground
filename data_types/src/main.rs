@@ -78,7 +78,7 @@ fn tuple_example() {
 
 fn array_example() {
     let int_array = [1, 2, 3, 4, 5,];
-    let str_array = ["a", "b", "c", "d",];
+    let str_array = ["a", "b", "c", "d",];      // &str is string slices *not String
     println!("{}", int_array[2]);
     println!("{}", str_array[3]);
 }

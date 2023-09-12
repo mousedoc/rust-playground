@@ -20,6 +20,4 @@ Nuclear test zone
 - [loop_statement](https://github.com/mousedoc/rust-playground/tree/main/loop_statement/src/main.rs) 
 - [ownership](https://github.com/mousedoc/rust-playground/tree/main/ownership/src/main.rs)  
 - [references_and_borrowing](https://github.com/mousedoc/rust-playground/tree/main/references_and_borrowing/src/main.rs)  
-
-
-
+- [slices](https://github.com/mousedoc/rust-playground/tree/main/slices/src/main.rs)  
