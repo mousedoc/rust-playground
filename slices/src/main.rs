@@ -70,12 +70,21 @@ fn get_first_world_with_str(str: &str) -> &str {
 }
 
 // &str = String slices
-// &[i32] = i32 slices
+// &[i32] = i32 array slices
 fn integer_slices() {
-    let int_elems: [i32; 5] = [1, 2, 3, 4, 5,];
-    let int_slices: &[i32] = &int_elems[2..];
+    let mut int_elems: [i32; 5] = [1, 2, 3, 4, 5,];
+    let int_slices: &mut [i32] = &mut int_elems[2..];
 
-    for slice in int_slices {
+    for slice in &mut int_slices.iter() {
         print!("{}, ", slice);
+    }
+
+    // for new line
+    println!();
+
+    int_slices[0] = 123123;
+
+    for elem in int_elems {
+        print!("{}, ", elem);
     }
 }
