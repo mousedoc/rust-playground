@@ -1,9 +1,9 @@
 # rust-playground
-Nuclear test zone
+Nuclear test zone  
 
-![](./readme_assets/does_not_compile.svg | width=100)
-![](./readme_assets/does_not_compile.svg | width=100)
-![](./readme_assets/does_not_compile.svg | width=100)
+<img src="./readme_assets/panics.svg" alt="drawing" width="200"/>
+<img src="./readme_assets/does_not_compile.svg" alt="drawing" width="200"/>
+<img src="./readme_assets/not_desired_behavior.svg" alt="drawing" width="200"/>
 
 ## Examples
 - [hello_world](https://github.com/mousedoc/rust-playground/blob/main/hello_world/main.rs)  
