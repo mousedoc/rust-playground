@@ -6,8 +6,7 @@ struct UserInfo {
 
 struct Color(i32, i32, i32);
 struct Vector3(i32, i32, i32);
-
-struct 
+struct AlwaysEqual;
 
 fn main() {
     basic_struct();
@@ -77,8 +76,8 @@ fn struct_with_nameless_field() {
     let white: Color = Color(255,255,255);
     let origin = Vector3(0, 0, 0);
 
-    println!("R is {}", white.0);
-    println!("Z is {}", origin.2);
+    println!("white's R is {}", white.0);
+    println!("origni's Z is {}", origin.2);
 
     // cannot, cuz different data type
     // let black: Color = Color {
@@ -87,7 +86,8 @@ fn struct_with_nameless_field() {
 }
 
 fn fieldless_struct() {
-
+    // For now, just know that there is this.
+    let always_equal: AlwaysEqual = AlwaysEqual;
 }
 
 fn print_user_info(user: &UserInfo) {
