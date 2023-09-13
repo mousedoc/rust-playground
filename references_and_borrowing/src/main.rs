@@ -3,6 +3,7 @@ fn main() {
     mutable_reference_example();
     reference_scope_example();
     dangling_ref_example();
+    take_give_routine();
 }
 
 fn reference_example() {
@@ -12,8 +13,10 @@ fn reference_example() {
 
     let mut hello: String = String::from("hello");
     hello.push_str(" bye");
+
+    // can immutable ref twice
     let ref_hello: &String = &hello;
-    let ref_hello_2: &String = &hello;            // can ref twice
+    let ref_hello_2: &String = &hello;            
     println!("{} {} {}", hello, ref_hello, ref_hello_2);
 }
 
@@ -69,10 +72,10 @@ fn dangling_ref_example() {
 }
 
 // cannot
+// after return str refs than str expired -> compile error
 // fn dangle() -> &String {
 //     let str = String::from("dangle");
-//     &str
-// }
+//     &str 
 // should be below
 fn not_dangle() -> String {
     let str: String = String::from("not dangle");
@@ -83,7 +86,20 @@ fn get_length(str: &String) -> usize {
     str.len()
 }
 
+fn take_give_routine() {
+
+    let hello = "hello".to_owned();
+    let mut get_hello = take_give_string(hello);
+    get_hello.push_str(" bye");
+
+    println!("{}", get_hello);
+}
+
 fn append_foo_get_length(str: &mut String) -> usize {
     str.push_str("foo");
     str.len()
+}
+
+fn take_give_string(str: String) -> String {
+    str
 }

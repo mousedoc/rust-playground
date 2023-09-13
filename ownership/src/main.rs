@@ -72,7 +72,7 @@ fn give_onwership_example() {
     let mut foo = String::from("foo");
     foo = print_str_and_return(foo);
     println!("oh {}", foo);
-
+    
     // with tuple
     let world: String = String::from("world");
     let world: (usize, String) = return_str_with_length_tuple(world);
