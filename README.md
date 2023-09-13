@@ -33,4 +33,4 @@ rust programming tutorial playground
 
 ## Structs
 - [structs](./ownership/src/main.rs)  
-- [rectangles](./rectangles/src/main.rs)
+- [implement_structs](./implement_structs/src/main.rs)
