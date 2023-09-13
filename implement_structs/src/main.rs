@@ -34,7 +34,7 @@ impl Rectangle {
     }
 }
 
-// can impl multiple time
+// can impl multiple times
 impl Rectangle {
     // like static method
     fn square(size: u32) -> Self {
