@@ -27,6 +27,9 @@ rust programming tutorial playground
 - [loop_statement](https://github.com/mousedoc/rust-playground/tree/main/loop_statement/src/main.rs) 
 
 ## Understanding Ownership
-- [ownership](https://github.com/mousedoc/rust-playground/tree/main/ownership/src/main.rs)  
+- [ownership](./tree/main/ownership/src/main.rs)  
 - [references_and_borrowing](https://github.com/mousedoc/rust-playground/tree/main/references_and_borrowing/src/main.rs)  
 - [slices](https://github.com/mousedoc/rust-playground/tree/main/slices/src/main.rs)  
+
+## Structs
+- [structs](./tree/main/structs/src/main.rs)  
