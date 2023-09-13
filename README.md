@@ -32,4 +32,5 @@ rust programming tutorial playground
 - [slices](./slices/src/main.rs)  
 
 ## Structs
-- [structs](./tree/main/ownership/src/main.rs)  
+- [structs](./ownership/src/main.rs)  
+- [rectangles](./rectangles/src/main.rs)
