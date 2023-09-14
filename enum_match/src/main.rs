@@ -16,6 +16,7 @@ enum Coin {
 fn main() {
     cent_example();
     option_example();
+    full_fill_example();
 }
 
 fn cent_example() {
@@ -55,6 +56,50 @@ fn option_example() {
         None => println!("None"),
         Some(i) => println!("{}", i),
     }
+
+    let four: Option<i32> = None;
+    let three: Option<i32> = minus_one(four);
+
+    match three {
+        Some(i) => println!("{}", i),
+        _ => println!("something wrong"),
+    }
+}
+
+fn full_fill_example() {
+    let num: u8 = 12;
+    
+    // cannot cuz has not all state of u8 
+    // match num => {
+    //     12 => println!("121212"),
+    // } 
+
+    // match should be full filled like below
+    match num {
+        12 => println!("12!"),
+        other => {
+            println!("otehr number {}", other);
+        },
+
+        // if you don't need 'other' value
+        // can use '_'
+    }
+
+    // if you don't need 'other' value
+    // can use '_'
+    match num {
+        12 => println!("12!"),
+        _ => {
+            println!("other number");
+        },
+    }
+
+    match num {
+        7 => (),        // this is nothing to do 
+        other => {
+            println!("{}", other);
+        }
+    }
 }
 
 // Define in rust prelude (defualti import things)
@@ -71,4 +116,16 @@ fn plus_one(num: Option<i32>) -> Option<i32> {
             Some(value + 1)
         }
     }
+}
+
+fn minus_one(num: Option<i32>) -> Option<i32> {
+    match num {
+        Some(value) => {
+            Some(value - 1)
+        },
+        other => {
+            println!("something wrong");
+            None
+        },
+     }
 }
