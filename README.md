@@ -34,3 +34,9 @@ rust programming tutorial playground
 ## Structs
 - [structs](./ownership/src/main.rs)  
 - [implement_structs](./implement_structs/src/main.rs)
+
+## Enums And Pattern Matching
+- [enums](./enums/src/main.rs)
+- [option_enum](./option_enum/src/main.rs)
+- [enum_match](./enum_match/src/main.rs)
+- [if_let](./if_let/src/main.rs)
